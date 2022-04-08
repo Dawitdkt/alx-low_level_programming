@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
+
+/**
+ * function_name - Short description, single line
+ * Description: Longer description of the function)?
+ * Return: returns 0
+ */
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%d is posative");
+	} else if (n < 0)
+		printf("%d is negative");
+	else
+		printf("%d is zero");
+	return (0);
+}
