@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 
 /**
@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-	int n;
+	int num;
+	char letter;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is posative", n);
-	} else if (n < 0)
-		printf("%d is negative", n);
-	else
-		printf("%d is zero", n);
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
 	return (0);
 }

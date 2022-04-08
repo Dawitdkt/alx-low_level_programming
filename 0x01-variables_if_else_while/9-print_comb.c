@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 
 /**
@@ -9,16 +9,18 @@
  */
 int main(void)
 {
-	int n;
+	int num;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	for (num = 0; num <= 9; num++)
 	{
-		printf("%d is posative", n);
-	} else if (n < 0)
-		printf("%d is negative", n);
-	else
-		printf("%d is zero", n);
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		putchar(',');
+		putchar(' ');
+	}
+
+	putchar('\n');
+
 	return (0);
 }
