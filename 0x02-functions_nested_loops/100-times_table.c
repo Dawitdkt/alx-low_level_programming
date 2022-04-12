@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * times_table -  a function that prints the n times table, starting with 0
+ * print_times_table -  a function that prints the n times table,
+ * starting with 0
  * rone = row, cone = column, d = digits of current result
  * @n: integer input
  * Return: If n is greater than 15 or less than 0 the function
@@ -32,9 +33,9 @@ void print_times_table(int n)
 				}
 				_putchar((d % 10) + '0');
 
-				if (cone < 9)
+				if (cone < n)
 				{
-					_putchar(',');
+					/* _putchar(','); */
 					_putchar(' ');
 				}
 			}
