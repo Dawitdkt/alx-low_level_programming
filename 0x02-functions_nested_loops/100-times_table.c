@@ -26,13 +26,13 @@ void print_times_table(int n)
 				d = (rone * cone);
 				if ((d / 10) > 0)
 				{
-					_putchar((d / 10) + '0');
+					printf("%d", d);
 				}
 				else
 				{
 					_putchar(' ');
 				}
-				_putchar((d % 10) + '0');
+				printf("%d", d);
 
 				if (cone < n)
 				{
