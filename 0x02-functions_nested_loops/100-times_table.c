@@ -11,6 +11,8 @@ void print_times_table(int n)
 	int rone, cone, d;
 
 	if (n > 15 || n < 0)
+	{}
+	else
 	{
 		for (rone = 0; rone <= n; rone++)
 		{
